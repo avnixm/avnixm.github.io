@@ -1,3 +1,0 @@
-# avnixm.github.io
-
-PUKINGINA
