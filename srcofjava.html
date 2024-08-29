@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>home</title>
+  <link rel="stylesheet" href="css/animation.css">
+  <meta charset="UTF-8">
+  <title>Source Code</title>
+</head>
+<header>
+  <a href="home.html" class="logo">mntzk</a>
+  <ul>
+    <li><a href="home.html" class="active">HOME</a></li>
+    <li><a href="cc101.html">CC101</a></li>
+    <li><a href="cc102.html">CC102</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="letsbefriends.html">LET'S BE FRIENDS</a></li>
+  </ul>
+</header>
+<body>
+<div class="srcofjava">
+  <h1>SRC</h1>
+  <p>This is the full SRC of the quiz bee final project for CC102 (；′⌒`)</p>
+</div>
+<div class="boxforcode">
+  <p>import java.util.Scanner;
+
+  public class cc102Quiz {<br>
+  public static void main(String[] args) {<br>
+  Scanner input = new Scanner(System.in);<br>
+    <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  int score = 0;<br>
+  //num1<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("WELCOME TO NIKKA'S QUIZ BEE");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Who is the first ever programmer?<br> \nA. Ada Lovelace\nB. Michael Jackson\nC. Charles Babbage\nD. Hillary Clinton");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer = input.nextLine();<br>
+  if(answer.equalsIgnoreCase("a")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Ada Lovelace");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num2<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("What is the brain of a computer? HINT: only three letters");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer2 = input.nextLine();<br>
+  if(answer2.equalsIgnoreCase("cpu")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is CPU");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num3<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Gmail and Youtube belongs to which company? ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer3 = input.nextLine();<br>
+   if(answer3.equalsIgnoreCase("google")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Google");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num4<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("A computer that is portable and suitable for use while travelling HINT: portability");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer4 = input.nextLine();<br>
+  if(answer4.equalsIgnoreCase("laptop")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Laptop");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num5<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("The operating system of Apple Phones HINT: Three letters");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer5 = input.nextLine();<br>
+  if(answer5.equalsIgnoreCase("ios")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is IOS");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num6<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(" Computers use this number system to store data and perform calculations HINT: It's composed of two numbers");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer6 = input.nextLine();<br>
+  if(answer6.equalsIgnoreCase("binary")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Binary");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num7<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("First page of the website HINT: It ends with .html \nA.) info.html\nB.) index.html\nC.) home.html\nD.) about.html");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer7 = input.nextLine();<br>
+  if(answer7.equalsIgnoreCase("b")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Index.html");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+  //num8<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Which leading computer software business created programs like Spread Sheet, Word and Power point?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer8 = input.nextLine();<br>
+  if(answer8.equalsIgnoreCase("microsoft")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Microsoft");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num9<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(" What does \\\"www\\\" stand for?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer9 = input.nextLine();<br>
+  if(answer9.equalsIgnoreCase("world wide web")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is World Wide Web");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num10<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Who created apple and died on october 5th 2011?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer10 = input.nextLine();<br>
+  if(answer10.equalsIgnoreCase("steve jobs")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Steve Jobs");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num11<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("What operating system is owned by microsoft");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer11 = input.nextLine();<br>
+  if(answer11.equalsIgnoreCase("windows")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Windows");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num12<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("What does usb stand for?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer12 = input.nextLine();<br>
+  if(answer12.equalsIgnoreCase("universal serial bus")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Universal Serial Bus");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num13<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Which part of the computer system are the ones that you can physically touch?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer13 = input.nextLine();<br>
+  if(answer13.equalsIgnoreCase("hardware")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Hardware");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num14<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("What company invented the MAC operating system?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer14 = input.nextLine();<br>
+  if(answer14.equalsIgnoreCase("apple")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Apple");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num15<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Who is known as the father of computers?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer15 = input.nextLine();<br>
+  if(answer15.equalsIgnoreCase("charles babbage")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Charles Babbage");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num16<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("What popular company designed the first CPU?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer16 = input.nextLine();<br>
+  if(answer16.equalsIgnoreCase("intel")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Intel");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num17<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("What is the Computer's main circuit board called?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer17 = input.nextLine();<br>
+  if(answer17.equalsIgnoreCase("motherboard")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Motherboard");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num18<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println( "which input device is used to Enter yourtArs, numbers, and other characters into the computer?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer18 = input.nextLine();<br>
+  if(answer18.equalsIgnoreCase("keyboard")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Keyboard");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num19<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("'Laser', 'Dot Matrix', and 'Inkjet' are types of which output computer device?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer19 = input.nextLine();<br>
+  if(answer19.equalsIgnoreCase("printer")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is Printer");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+  //num20<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("What company invented the first ever floppy disk, hard disk drive, and DRAMS?");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Enter your Answer: ");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String answer20 = input.nextLine();<br>
+  if(answer20.equalsIgnoreCase("ibm")){<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Correct!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score++;<br>
+  }<br>
+  else{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Wrong, the correct answer is IBM");<br>
+  }<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Your final score is: " + score);<br>
+    <br>
+  System.out.println("--------------------------------------");<br>
+  System.out.println("Do you want to try the quiz again? (yes/no)");<br>
+  String response = input.nextLine();<br>
+    <br>
+  while (response.equalsIgnoreCase("yes")) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main(args);<br>
+  System.out.println("--------------------------------------");<br>
+  } <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Thank you for playing!");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("--------------------------------------");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;}<br>
+  }<br>
+</P>
+</div>
+  <footer>
+  <p>Copyright &copy; 2022, Nikka Aira</p>
+</footer>
+</body>
+</html>

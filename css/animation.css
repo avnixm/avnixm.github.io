@@ -1,0 +1,49 @@
+.details{
+  animation: transitionIn 0.75s;
+}
+.about{
+  animation: transitionIn 0.75s;
+}
+.sched{
+  animation: transitionIn 0.75s;
+}
+.greetings{
+  animation: transitionIn 0.75s;
+}
+.cc101{
+  animation: transitionIn 0.75s;
+}
+.infos{
+  animation: transitionIn 0.75s;
+}
+.images{
+  animation: transitionIn 0.75s;
+}
+.sched table {
+  animation: transitionIn 0.75s;
+}
+.deets{
+  animation: transitionIn 0.75s;
+}
+  .srcofjava{
+    animation: transitionIn 0.75s;
+  }
+.boxforcode{
+  animation: transitionIn 0.75s;
+}
+.output{
+  animation: transitionIn 0.75s;
+}
+.pseudo{
+  animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+  from{
+    opacity:0;
+    transform: rotate(0deg);
+  }
+  to{
+    opacity:1;
+    transform: rotate(0);
+  }
+}
