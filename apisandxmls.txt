@@ -1,0 +1,34 @@
+XML
+
+<guimba>
+    <location>
+        <name>Guimba</name>
+        <region>Nueva Ecija</region>
+        <country>Philippines</country>
+        <population>85,000</population>
+        <area>245.29 km²</area>
+        <about>Guimba is a municipality located in the northern part of Nueva Ecija. Known for its agricultural lands, it produces a variety of crops such as rice, corn, and sugarcane. The town is a major contributor to the economy of the region.</about>
+    </location>
+</guimba>
+
+location
+ ├── name (string)       -> Guimba
+ ├── region (string)     -> Central Luzon
+ ├── country (string)    -> Philippines
+ ├── population (integer)-> 130,000
+ ├── area (decimal)      -> 245.29 km²
+ └── about (string)      -> Description of Guimba
+
+
+
+APIs
+
+OPENWEATHER_API_KEY = '1ab2dde3c0b06c67bbf1d72cb9945ac9'
+- I am getting the current weather using the OpenWeather API. These would include temperature, humidity, and weather conditions. The script makes a fetch request to an API endpoint
+https://api.openweathermap.org/data/2.5/weather?q={city}&appid={OPENWEATHER_API_KEY}&units=metric.
+It took the city from the user and used {OPENWEATHER_API_KEY} as the API key. The code fetches a JSON object that contains the information about the weather from the API. This JSON is read to find some specific details such as data.main.temp for temperature, data.main.humidity for humidity, and gets it displayed on the webpage including data.weather[0].description for conditions.
+
+WEATHERAPI_KEY = '025e115fdfc446e29c573001241611'
+- I have also used the WeatherAPI to fetch a 3-day weather forecast and check for active weather alerts. The script sends a fetch request to the API's endpoint:
+https://api.weatherapi.com/v1/forecast.json?key={WEATHERAPI_KEY}&q={lat},{lon}&days=3&alerts=yes.
+In the example below, {lat} and {lon} refer to the place that will be located using its latitude and longitude coordinates from the OpenWeather API, and {WEATHERAPI_KEY} is the key to the API. It will return a JSON object that contains detailed information about forecasts under data.forecast.forecastday and alerts under data.alerts.alert. I have wrapped my iterations around this data to dispense with the forecast for each day and active storms with the details on the degrees and instructions.

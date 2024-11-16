@@ -1,0 +1,199 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100%;
+}
+
+.container {
+    margin-top: 70%;
+    width: 100%;
+    max-width: 800px;
+    background-color: #4a148c;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.guimbacontainer {
+    width: 100%;
+    max-width: 800px;
+    background-color: #4a148c;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#guimba-info {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    color: #333;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#guimba-info h2 {
+    color: #4a148c;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#guimba-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    padding: 14px;
+    font-size: 1rem;
+    width: 70%;
+    max-width: 400px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4a148c;
+}
+
+button {
+    background-color: #fff;
+    color: #4a148c;
+    padding: 14px 40px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 15px;
+}
+
+button:hover {
+    background-color: #4a148c;
+    color: white;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1.02);
+}
+
+.weather-card {
+    background-color: #fff;
+    padding: 25px;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-weight: bold;
+}
+
+.weather-card h2 {
+    color: #4a148c;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.weather-card p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+
+#map iframe {
+    border-radius: 12px;
+    width: 100%;
+    height: 400px;
+}
+
+.forecast-info div {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-weight: bold;
+}
+
+.forecast-info p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.forecast-info strong {
+    color: #4a148c;
+}
+
+.alert {
+    background-color: #ffebee;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    color: #d32f2f;
+}
+
+.alert p {
+    margin: 0;
+}
+
+.alert strong {
+    color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
