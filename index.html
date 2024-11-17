@@ -1,89 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EasyStudy - An e-learning platform for BSIT students.">
-    <title>EasyStudy - Learn with Ease</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>Simple JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <nav class="nav">
-            <div class="logo">EasyStudy</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-item">Home</a></li>
-                <li><a href="#about-us" class="nav-item">About Us</a></li>
-                <li><a href="#features" class="nav-item">Features</a></li>
-                <li><a href="#courses" class="nav-item">Courses</a></li>
-                <li><a href="#contact" class="nav-item">Contact Us</a></li>
-            </ul>
-        </nav>
-        <section class="hero" id="home">
-            <div class="hero-image">
-                <img src="images/happyfaks.png" alt="Students learning" aria-describedby="hero-image-description">
-            </div>
-            <div class="hero-content">
-                <h1>No tuition? No problem! Learn with us with EasyStudy!</h1>
-                <p>Your one-stop platform for effortless learning</p>
-                <a href="#features" class="cta-button">Get Started</a>
-            </div>
-        </section>
-    </header>
-
-    <main>
-        <section id="features" class="features">
-            <h2>Why EasyStudy?</h2>
-            <div class="feature-cards">
-                <div class="card">
-                    <img src="images/interface-ui-slideshow-slide-show-carousel-svgrepo-com.svg" alt="Interactive Learning Icon">
-                    <h3>Interactive Learning</h3>
-                    <p>Engage with quizzes and discussions to make learning fun and effective.</p>
-                </div>
-                <div class="card">
-                    <img src="images/python-svgrepo-com.svg" alt="Comprehensive Resources Icon">
-                    <h3>Comprehensive Resources</h3>
-                    <p>Access a wide range of resources designed for BSIT students.</p>
-                </div>
-                <div class="card">
-                    <img src="images/chat-line-svgrepo-com.svg" alt="Support Icon">
-                    <h3>24/7 Support</h3>
-                    <p>Get help anytime with our dedicated support system for students.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="programming-languages" class="programming-languages">
-            <h2>Most Learned Programming Languages</h2>
-            <div id="languages-container">
-            </div>
-            <button id="update-button" class="update-button">Update Languages</button>
-            <p id="update-time"></p>
-        </section>
-
-        <section id="contact" class="contact-us">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Your message" rows="5" required aria-required="true"></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Nikka Aira Villanueva Mariño. All rights reserved.</p>
-    </footer>
+    <div id="quiz-container">
+        <h2>JavaScript Quiz</h2>
+        <div class="question">
+            <p id="question"></p>
+            <input class="text-input" type="text" id="answer" placeholder="Type your answer here">
+        </div>
+        <button class="answer" onclick="checkAnswer()">Submit Answer</button>
+        <p id="feedback"></p>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
