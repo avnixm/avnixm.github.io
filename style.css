@@ -5,11 +5,11 @@
     --secondary: #76C0A5;
     --accent: #073035;
     --big-font: 3rem;
-    --h2-font: 2rem;
+    --h2-font: 20px;
     --p-font: 1rem;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
