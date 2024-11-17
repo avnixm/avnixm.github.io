@@ -1,35 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<html oncontextmenu="return false">
-</html>
+
 <head>
-  <link rel="stylesheet" href="css/styles.css">
-  <meta charset="UTF-8">
-  <title>home</title>
-  <link rel="stylesheet" href="css/animation.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EasyStudy - An e-learning platform for BSIT students.">
+    <title>EasyStudy - Learn with Ease</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-<header>
-  <a href="home.html" class="logo">mntzk</a>
-  <ul>
-    <li><a href="home.html" class="active">HOME</a></li>
-    <li><a href="cc101.html">CC101</a></li>
-    <li><a href="cc102.html">CC102</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="letsbefriends.html">LET'S BE FRIENDS</a></li>
-  </ul>
-</header>
+    <header>
+        <nav class="nav">
+            <div class="logo">EasyStudy</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about-us" class="nav-item">About Us</a></li>
+                <li><a href="#features" class="nav-item">Features</a></li>
+                <li><a href="#courses" class="nav-item">Courses</a></li>
+                <li><a href="#contact" class="nav-item">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section class="hero" id="home">
+            <div class="hero-image">
+                <img src="images/happyfaks.png" alt="Students learning" aria-describedby="hero-image-description">
+            </div>
+            <div class="hero-content">
+                <h1>No tuition? No problem! Learn with us with EasyStudy!</h1>
+                <p>Your one-stop platform for effortless learning</p>
+                <a href="#features" class="cta-button">Get Started</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="features" class="features">
+            <h2>Why EasyStudy?</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <img src="images/interface-ui-slideshow-slide-show-carousel-svgrepo-com.svg" alt="Interactive Learning Icon">
+                    <h3>Interactive Learning</h3>
+                    <p>Engage with quizzes and discussions to make learning fun and effective.</p>
+                </div>
+                <div class="card">
+                    <img src="images/python-svgrepo-com.svg" alt="Comprehensive Resources Icon">
+                    <h3>Comprehensive Resources</h3>
+                    <p>Access a wide range of resources designed for BSIT students.</p>
+                </div>
+                <div class="card">
+                    <img src="images/chat-line-svgrepo-com.svg" alt="Support Icon">
+                    <h3>24/7 Support</h3>
+                    <p>Get help anytime with our dedicated support system for students.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="programming-languages" class="programming-languages">
+            <h2>Most Learned Programming Languages</h2>
+            <div id="languages-container">
+            </div>
+            <button id="update-button" class="update-button">Update Languages</button>
+            <p id="update-time"></p>
+        </section>
+
+        <section id="contact" class="contact-us">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="5" required aria-required="true"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Nikka Aira Villanueva Mariño. All rights reserved.</p>
+    </footer>
 </body>
-<div class="details">
-  <h1>I'M<span> NIKKA AIRA</span></h1>
-  <p>Hi! My name is Nikka Aira Mariño, This is my first HTML-CSS based personal website.<br>One of our subject, CC101, included this as a final requirement.</p>
-  <p>You will learn more about me on this website,<br>Learn about my personal information and read some of my works.</p><br>
-  <a href="letsbefriends.html">Get the src</a>
-</div>
-<div class="pictures">
-  <img src="images/nobg-removebg-preview.png">
-</div>
-<footer>
-  <p>Copyright &copy; 2022, Nikka Aira</p>
-</footer>
+
 </html>
